@@ -1,0 +1,26 @@
+def traficLight():
+    signal=input("Enter colour of the  light :")
+    if (signal not in ("RED","YELLOW","GREEN")):
+        print("Please enter valid traffic light colour in  capital...")
+    else:
+        value=light(signal)    # call to light() function
+    if (value==0):
+            print("STOP, Your life is precious.")
+    elif (value==1):
+            print("Please go slow.")
+    else:
+            print("GO!!! Thanks for being patient.")
+#Function ends here
+
+def light(colour):
+    if colour=="RED":
+        return 0
+    elif colour=="YELLOW":
+        return 1
+    else:
+        return 2
+# function ends here
+
+#main function starts here
+traficLight()
+print("Speed Thrills but Kills.....")
